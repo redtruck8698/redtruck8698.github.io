@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>shorts-agent</title>
+<style>
+  :root { --bg:#fbfaf7; --ink:#1d1c19; --muted:#615d55; --line:#e4e0d7; --accent:#0f6b5c; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#151513; --ink:#ecebe6; --muted:#a29d92; --line:#34322d; --accent:#62c9b5; } }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.7 system-ui, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:40px 20px 64px; }
+  h1 { font-size:28px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:32px 0 8px; }
+  p, li { color:var(--ink); }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  a { color:var(--accent); }
+  footer { border-top:1px solid var(--line); margin-top:40px; padding-top:16px; color:var(--muted); font-size:14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>shorts-agent</h1>
+  <p class="sub">A personal tool for one YouTube channel owner to publish Korean-language science Shorts.<br>
+  한 채널 운영자가 자기 채널에 한국어 과학 쇼츠를 올리기 위한 개인용 도구입니다.</p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Edits openly licensed science videos (public-domain NASA footage and Creative Commons videos) into vertical Shorts with Korean narration and subtitles, always crediting the original creator and license.</li>
+    <li>Uploads those Shorts to the owner's own YouTube channel through the YouTube Data API, only after the owner approves each one.</li>
+    <li>Reads the channel's own analytics (views, likes, watch time) through the YouTube Analytics API so the owner can improve future videos.</li>
+  </ul>
+
+  <h2>Who uses it</h2>
+  <p>Only the owner of the channel. It is not offered to other users, and no one else signs in to it.</p>
+
+  <h2>하는 일</h2>
+  <ul>
+    <li>공공 저작물(NASA)과 크리에이티브 커먼즈 과학 영상을 세로 쇼츠로 편집하고 한국어 해설과 자막을 넣습니다. 원작자와 라이선스는 항상 설명란에 밝힙니다.</li>
+    <li>채널 주인이 승인한 영상만 YouTube Data API 로 자기 채널에 올립니다.</li>
+    <li>다음 영상을 개선하려고 자기 채널의 분석 지표(조회수, 좋아요, 시청 시간)를 YouTube Analytics API 로 읽습니다.</li>
+  </ul>
+
+  <h2>Policies</h2>
+  <ul>
+    <li><a href="privacy.html">Privacy Policy / 개인정보처리방침</a></li>
+    <li><a href="terms.html">Terms of Service / 이용 약관</a></li>
+  </ul>
+
+  <footer>
+    This tool uses YouTube API Services. See the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.<br>
+    Contact: <a href="https://github.com/redtruck8698/redtruck8698.github.io/issues">open an issue on GitHub</a>.
+  </footer>
+</main>
+</body>
+</html>
